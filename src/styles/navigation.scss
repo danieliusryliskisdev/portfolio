@@ -1,0 +1,87 @@
+.navigation {
+  width: 6rem;
+  height: 8rem;
+  display: flex;
+  position: fixed;
+  top: 2vh;
+  left: 2vw;
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__list-item {
+    display: flex;
+  }
+
+  &__button {
+    font-family: "Courier New", Courier, monospace;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 5px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: color 0.4s ease, opacity 0.5s ease;
+
+    &:hover {
+      color: rgb(167, 167, 167);
+      cursor: pointer;
+      background-image: linear-gradient(90deg, #ffffff, #000000);
+      background-size: 2000%;
+      background-position: 0% 50%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: gradientMove 3s ease infinite;
+    }
+
+    &--active {
+      color: transparent;
+      pointer-events: none;
+    }
+
+    &--active::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: black;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--active span {
+      visibility: hidden;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 769px) {
+  .navigation__button:hover {
+    color: inherit;
+    cursor: default;
+    background-image: none;
+    animation: none;
+  }
+}

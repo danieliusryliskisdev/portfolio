@@ -1,0 +1,91 @@
+.projects {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  &__name {
+    position: fixed;
+    bottom: 2vh;
+    left: 2vw;
+    transform: translate(0, 0);
+    margin-left: 0;
+  }
+
+  &__content {
+    position: fixed;
+    top: 20vh;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: appear 0.5s forwards;
+  }
+
+  &__content.fade-out {
+    animation: fadeOut 0.5s forwards;
+  }
+
+  &__content__kitm,
+  &__content__lka,
+  &__content__vgtu {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: -1vh;
+      margin-bottom: 2vh;
+    }
+  }
+
+  @media (width <= 800px) {
+    h2,
+    p {
+      margin: 0;
+      font-size: 13px;
+    }
+  }
+
+  @media (width >= 800px) {
+    h2,
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .projects__content__kitm,
+    .projects__content__lka,
+    .projects__content__vgtu {
+      flex-direction: row-reverse;
+      align-items: baseline;
+      gap: 2vw;
+    }
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

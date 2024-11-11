@@ -1,0 +1,62 @@
+.home {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  &__name {
+    position: fixed;
+    bottom: 2vh;
+    left: 2vw;
+    transform: translate(0, 0);
+    margin-left: 0;
+  }
+
+  &__text {
+    width: 170px;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    text-align: left;
+    transform: none;
+    margin-left: 0;
+    opacity: 1;
+    animation: 0.5s forwards appear;
+  }
+
+  &__text.fade-out {
+    animation: 0.5s forwards dissapear;
+  }
+}
+
+@media (width <= 320px) {
+  .home__text {
+    font-size: 12px;
+    width: 120px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .home__text {
+    width: 120px;
+    font-size: 14px;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dissapear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
