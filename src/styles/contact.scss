@@ -21,8 +21,8 @@
     transform: translate(-50%, -50%);
     justify-content: space-between;
     height: 100px;
-    opacity: 0; 
-    animation: 0.5s appear forwards; 
+    opacity: 0;
+    animation: 0.5s appear forwards;
 
     &.fade-out {
       animation: dissapear 0.5s forwards;
@@ -33,6 +33,7 @@
       font-weight: bold;
       text-decoration: none;
       color: black;
+      -webkit-tap-highlight-color: transparent;
     }
   }
 

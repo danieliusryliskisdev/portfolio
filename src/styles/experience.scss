@@ -39,6 +39,7 @@
     &__diploma {
       text-decoration: none;
       color: black;
+      -webkit-tap-highlight-color: transparent;
       &:hover {
         color: rgb(167, 167, 167);
         cursor: pointer;
@@ -58,6 +59,7 @@
     &__page {
       text-decoration: none;
       color: black;
+      -webkit-tap-highlight-color: transparent;
       &:hover {
         color: rgb(167, 167, 167);
         cursor: pointer;
