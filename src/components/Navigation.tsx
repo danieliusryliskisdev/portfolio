@@ -21,16 +21,16 @@ export const Navigation = ({
         setIsTextVisible(false);
         switch (target.name) {
           case "home":
-            navigate("/portfolio/");
+            navigate("/");
             break;
           case "experience":
-            navigate("/portfolio/experience");
+            navigate("/experience");
             break;
           case "projects":
-            navigate("/portfolio/projects");
+            navigate("/projects");
             break;
           case "contact":
-            navigate("/portfolio/contact");
+            navigate("/contact");
             break;
           default:
             break;

@@ -7,12 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
-        <Route path="/portfolio/" element={<Home />}></Route>
-        <Route path="/portfolio/experience" element={<Experience />}></Route>
-        <Route path="/portfolio/projects" element={<Projects />}></Route>
-        <Route path="/portfolio/contact" element={<Contact />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/experience" element={<Experience />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </BrowserRouter>
   );
