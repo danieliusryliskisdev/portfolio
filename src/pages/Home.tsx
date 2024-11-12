@@ -8,7 +8,7 @@ export const Home = () => {
 
   return (
     <div className="home">
-      <div className="home__name">Danielius Ryliškis</div>
+      <div className="home__name">DANIELIUS RYLISKIS</div>
       <div className="home__navigation">
         <Navigation
           setFadeOut={setFadeOut}
