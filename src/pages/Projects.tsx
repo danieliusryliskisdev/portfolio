@@ -6,7 +6,10 @@ export const Projects = () => {
   const [isTextVisible, setIsTextVisible] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
 
-  // Handle text visibility logic
+  if (isTextVisible) {
+    return "";
+  }
+
   useEffect(() => {
     if (fadeOut) {
       const timeout = setTimeout(() => setIsTextVisible(false), 1000);
