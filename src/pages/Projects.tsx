@@ -6,9 +6,11 @@ export const Projects = () => {
   const [isTextVisible, setIsTextVisible] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
 
-  if (isTextVisible) {
-    return "";
-  }
+  const a = () => {
+    return isTextVisible;
+  };
+
+  a();
 
   useEffect(() => {
     if (fadeOut) {
