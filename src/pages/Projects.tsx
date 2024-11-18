@@ -44,7 +44,7 @@ export const Projects = () => {
             platform inspired by eBay, designed to offer a seamless and
             user-friendly experience for buying and selling products. This
             platform will cater to both individual sellers and buyers, providing
-            robust features
+            robust features.
           </p>
           <p className="projects__tech">
             <strong>Technologies Used:</strong> TypeScript, JavaScript, HTML,
