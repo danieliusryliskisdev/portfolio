@@ -51,7 +51,7 @@ export const Contact = () => {
           GitHub&#8599;
         </a>
         <a
-          href="https://www.dropbox.com/scl/fi/s67dcesouhjilz6d6c1tl/Danielius-Ryli-kis.pdf?rlkey=dudod2ni95zt4vhb6gnpudkpx&st=2e4bnk5m&dl=0"
+          href="https://www.dropbox.com/scl/fi/s67dcesouhjilz6d6c1tl/Danielius-Ryli-kis.pdf?rlkey=dudod2ni95zt4vhb6gnpudkpx&dl=1"
           download="DanieliusRyliškis.pdf"
           className="contact__contact__link"
         >
