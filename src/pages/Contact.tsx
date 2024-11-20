@@ -51,8 +51,8 @@ export const Contact = () => {
           GitHub&#8599;
         </a>
         <a
-          href="https://www.dropbox.com/scl/fi/675980ea157vf7har5n1q/cv.pdf?rlkey=lp8by34gbqx1kcec1h53nk7mz&st=o7t6lwvi&dl=1"
-          download="Resume.pdf"
+          href="https://www.dropbox.com/scl/fi/s67dcesouhjilz6d6c1tl/Danielius-Ryli-kis.pdf?rlkey=dudod2ni95zt4vhb6gnpudkpx&st=2e4bnk5m&dl=0"
+          download="DanieliusRyliškis.pdf"
           className="contact__contact__link"
         >
           Resume&#8595;
